@@ -40,7 +40,7 @@ def change_word():
     window.after_cancel(timer)
     spanish_word=get_spanish_word()
     canvas.itemconfig(card_shown,image=card_front)
-    canvas.itemconfig(title,text="French",fill="black")
+    canvas.itemconfig(title,text="Spanish",fill="black")
     canvas.itemconfig(word,text=spanish_word["Spanish"],fill="black")
     timer=window.after(3500,learn_word)
 def done():
@@ -53,7 +53,7 @@ def done():
 canvas = tk.Canvas(height=526, width=800)
 card_shown=canvas.create_image(400, 263, image=card_front)
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
-title=canvas.create_text(400, 150, text="French", font=("Ariel", 40, "italic"),fill="black")
+title=canvas.create_text(400, 150, text="Spanish", font=("Ariel", 40, "italic"),fill="black")
 spanish_word=get_spanish_word()
 word=canvas.create_text(400, 263, text=spanish_word["Spanish"], font=("Ariel", 60, "bold"),fill="black")
 canvas.grid(row=0, column=0,columnspan=2)
