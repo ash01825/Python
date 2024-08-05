@@ -1,4 +1,4 @@
-#still gotta run this in a cloud with AWS Lambda or maybe Google Cloud FUnctions
+#still gotta run this in a cloud with AWS Lambda or maybe Google Cloud FUnctions or maybe an online cloud
 
 import datetime as dt
 import random
