@@ -5,7 +5,7 @@ from twilio.rest import Client
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv(r"stock-change-message\.env")
+load_dotenv(r"/Users/ash/Desktop/Python/stock-change-message/.env")
 
 STOCK = os.getenv("STOCK")
 COMPANY_NAME = os.getenv("COMPANY_NAME")
