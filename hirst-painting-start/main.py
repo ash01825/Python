@@ -10,7 +10,7 @@ t.hideturtle()
 t.speed("fastest")
 
 rgb_colors = []
-colors = colorgram.extract('image.jpg', 30)
+colors = colorgram.extract(r'/Users/ash/Desktop/Python/hirst-painting-start/image.jpg', 30)
 for color in colors:
     r=color.rgb.r
     g=color.rgb.g
