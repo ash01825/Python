@@ -31,7 +31,7 @@ while True:
         big_cookie = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "bigCookie")))
         
         driver.execute_script("arguments[0].click();", big_cookie)
-        time.sleep(0.01)
+        time.sleep(0.1)
         # print(num_of_cookies(driver))
         if product_available(driver):
             product=driver.find_element(By.CSS_SELECTOR,".product.unlocked.enabled")
